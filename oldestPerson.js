@@ -47,7 +47,7 @@ const findTheOldest = function() {
 
         {
             firstName: 'Jannett',
-            birthYear: 1948,
+            birthYear: 1939,
             deathYear: stillLiving
         },
         
@@ -65,7 +65,9 @@ const findTheOldest = function() {
 
     const maxAge = Math.max(...peopleAge)
 
-    return maxAge
+    const indexOfOldest = peopleAge.indexOf(maxAge);
+
+    return people[indexOfOldest].firstName;
 };
 
 console.log(findTheOldest())
