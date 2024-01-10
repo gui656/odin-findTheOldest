@@ -1,4 +1,7 @@
 const findTheOldest = function() {
+
+    const stillLiving = new Date().getFullYear();
+
     const people = [
         {
             firstName: 'Albert',
@@ -9,7 +12,7 @@ const findTheOldest = function() {
         {
             firstName: 'Ellen',
             birthYear: 1962,
-            deathYear: 2026
+            deathYear: stillLiving
         },
 
         {
@@ -21,7 +24,7 @@ const findTheOldest = function() {
         {
             firstName: 'Johnny',
             birthYear: 1984,
-            deathYear: 2053
+            deathYear: stillLiving
         },
 
         {
@@ -34,7 +37,20 @@ const findTheOldest = function() {
             firstName: 'Sheik Al-Habbar',
             birthYear: 1442,
             deathYear: 1516
-        }
+        },
+
+        {
+            firstName: 'Elliot',
+            birthYear: 2007,
+            deathYear: stillLiving
+        },
+
+        {
+            firstName: 'Jannett',
+            birthYear: 1948,
+            deathYear: stillLiving
+        },
+        
     ]
 
     const birthYears = people.map(birthDate => birthDate.birthYear);
