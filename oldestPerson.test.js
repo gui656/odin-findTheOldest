@@ -5,5 +5,5 @@ test('It should be the oldest person on the list. Currently 76.', () => {
     const result = findTheOldest();
   
     // Make assertions
-    expect(result).toBe(76);
+    expect(result).toBe('Jannett');
   });
